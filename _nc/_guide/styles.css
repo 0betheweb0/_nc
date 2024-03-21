@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #fff;
+  color: #222;
+  font-size: 10px;
+  line-height: 1.4;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  counter-reset: section;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+fieldset,
+th,
+td,
+input,
+select,
+textarea,
+address,
+button,
+label {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSansKR-Regular", "Malgun gothic", "맑은고딕", Dotum, "돋움", arial, sans-serif;
+}
+
+img {
+  border: 0;
+  vertical-align: top;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+  font-family: "NotoSansKR-Bold";
+}
+
+strong,
+b {
+  font-weight: normal;
+  font-family: "NotoSansKR-Bold";
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+a {
+  color: #222;
+  box-sizing: border-box;
+}
+
+a:focus,
+a:active,
+a:hover {
+  cursor: pointer;
+}
+
+div:focus {
+  outline: none;
+}
+
+header,
+hgroup,
+footer,
+section,
+article,
+aside,
+nav,
+figure,
+figcaption,
+main,
+details,
+menu {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+caption,
+legend {
+  position: absolute !important;
+  top: 0 !important;
+  left: -999rem !important;
+  display: block;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0 !important;
+  font-size: 1px;
+  text-indent: 999rem !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+  white-space: nowrap !important;
+}
+
+button {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  background: transparent;
+  border: 0;
+  border: none;
+  cursor: pointer;
+  overflow: visible;
+  vertical-align: middle;
+}
+
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+i {
+  font-style: normal;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+  color: #dcdcdc !important;
+}
+
+::-moz-placeholder {
+  color: #dcdcdc !important;
+}
+
+:-ms-input-placeholder {
+  color: #dcdcdc !important;
+}
+
+:-moz-placeholder {
+  color: #dcdcdc !important;
+}
+
+/** text **/
+.hide {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-indent: -999rem;
+  line-height: 0;
+}
+
+.break {
+  display: block;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .break {
+    display: inline;
+  }
+
+  .break-m {
+    display: block;
+  }
+}
+
+/* Layout */
+.guide_wrap {
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 4rem;
+  color: rgba(36, 165, 243, 1);
+  font-size: 2.4rem;
+  font-family: "NotoSansKR-Black";
+}
+
+.list-wrap {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+h2 {
+  margin: 5rem 0 1rem;
+  color: #444;
+  font-size: 1.6rem;
+  font-family: "NotoSansKR-Bold";
+}
+
+.list-wrap>div {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+
+.list-wrap>div:hover {
+  background-color: rgba(137, 136, 236, .1);
+}
+
+.list-wrap .done {
+  background-color: rgba(36, 165, 243, .2);
+}
+
+.list-wrap dt {
+  flex: 1 1 0;
+  padding-left: 1rem;
+  font-family: "NotoSansKR-Bold";
+}
+
+.list-wrap dd {
+  flex: 1 1 0;
+  padding-left: 1rem;
+}
