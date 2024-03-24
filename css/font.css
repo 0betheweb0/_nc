@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Webfont: Noto Sans KR
-Light 300, Regular 400, Medium 500, Bold 700, Black 900 */
+Light 300, Regular 400(기본 설정), Medium 500, Bold 700, Black 900 */
 @font-face {
   font-family: "NotoSansKR-Light";
   font-style: normal;
