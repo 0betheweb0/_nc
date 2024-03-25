@@ -708,10 +708,15 @@ iframe {
 
   .service-wrap .menu {
     padding-top: 3.4rem;
+    opacity: 0;
   }
 
   .nav.wide {
     height: 100vh;
+  }
+
+  .nav.wide .service-wrap .menu {
+    opacity: 1;
   }
 
   .nav.wide .service-wrap .menu {
