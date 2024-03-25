@@ -14,10 +14,12 @@
 <body>
   <div class="wrapper space-main">
     <!-- 메뉴 -->
-    <nav class="nav">
+    <nav class="nav"> <!-- .service-wrap 내의 버튼 .expand를 클릭하는 경우, .wide 클래스가 추가 및 삭제-->
+      <button type="button" class="btn-menu"><i></i><span class="hide">메뉴 보기</span></button>
+      <!-- [모바일] .nav-servive 영역에 .wide 클래스가 추가되는 경우 텍스트를 변경합니다.: '메뉴 숨기기' -->
       <!-- 공통 메뉴 -->
-      <div class="service-wrap"> <!-- 버튼 .expand를 클릭하는 경우, .wide 클래스가 추가 및 삭제-->
-        <h1><a href="#"><img src="/_nc/img/common/logo.svg" alt="NC SPACE"></a></h1>
+      <div class="service-wrap">
+        <h1 class="hide-mw"><a href="#"><img src="/_nc/img/common/logo.svg" alt="NC SPACE"></a></h1>
         <ul class="menu">
           <li class="active"> <!-- 활성화될 때 .active 클래스가 추가됩니다. -->
             <a href="#">
@@ -26,8 +28,7 @@
             </a>
           </li>
           <li><a href="#"><i><img src="/_nc/img/common/icon-lnb-2.png" alt=""></i> <span
-                class="text-wrap"><span><b>SP</b>
-                  Server Platform</span></span></a></li>
+                class="text-wrap"><span><b>SP</b> Server Platform</span></span></a></li>
           <li><a href="#"><i><img src="/_nc/img/common/icon-lnb-3.png" alt=""></i> <span
                 class="text-wrap"><span><b>HUB</b>
                   virtual Desktop</span></span></a></li>
@@ -45,13 +46,13 @@
           <li><a href="#"><i><img src="/_nc/img/common/icon-lnb-8.png" alt=""></i> <span
                 class="text-wrap"><span><b>Administrator</b></span></span></a></li>
         </ul>
-        <button type="button" class="btn-icon expand"><span class="hide">메뉴명 보기</span></button>
-        <!-- nav-servive 영역에 .wide 클래스가 추가되는 경우 텍스트 변경: '메뉴명 숨기기'-->
+        <button type="button" class="btn-icon expand hide-mw"><span class="hide">메뉴 보기</span></button>
+        <!-- [PC] .nav-servive 영역에 .wide 클래스가 추가되는 경우 텍스트를 변경합니다.: '메뉴 숨기기'-->
       </div>
       <!-- // 공통 메뉴 -->
 
       <!-- 위젯 메뉴 -->
-      <div class="widget-wrap"> <!-- 버튼 .expand를 클릭하는 경우, .wide 클래스가 추가 및 삭제-->
+      <div class="widget-wrap"> <!-- .widget-wrap 내의 버튼 .expand를 클릭하는 경우, .wide 클래스가 추가 및 삭제-->
         <div class="widget-inner">
           <h2>Widget</h2>
           <div class="form-dropdown"> <!-- 클릭 시 .active 클래스가 토글됩니다. -->
@@ -76,8 +77,8 @@
                -->
               <strong class="title"><b>SP Widget 01</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-1.html">
-                <p><a href="/_nc/html/space/widget/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-1.html">
+                <p><a href="/_nc/html/space/iframe/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -86,8 +87,8 @@
             <div class="drag-item" data-widget-id="widget2" data-cate="HUB">
               <strong class="title"><b>HUB Widget 01</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-2.html">
-                <p><a href="/_nc/html/space/widget/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-2.html">
+                <p><a href="/_nc/html/space/iframe/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -96,8 +97,8 @@
             <div class="drag-item" data-widget-id="widget65" data-cate="KUBE"> <!-- .drag-item: 드래그할 아이템 -->
               <strong class="title"><b>KUBE Widget 01</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-1.html">
-                <p><a href="/_nc/html/space/widget/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-1.html">
+                <p><a href="/_nc/html/space/iframe/widget-1.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -107,8 +108,8 @@
             <div class="drag-item width-3x" data-widget-id="widget345" data-cate="ACE">
               <strong class="title"><b>ACE Widget 01 너비x1.5</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-3.html">
-                <p><a href="/_nc/html/space/widget/widget-3.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-3.html">
+                <p><a href="/_nc/html/space/iframe/widget-3.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap" data-widget-id="widget45">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -118,8 +119,8 @@
             <div class="drag-item width-4x" data-widget-id="widget545" data-cate="Control">
               <strong class="title"><b>Control Widget 01 너비x2</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-4.html">
-                <p><a href="/_nc/html/space/widget/widget-4.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-4.html">
+                <p><a href="/_nc/html/space/iframe/widget-4.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -129,8 +130,8 @@
             <div class="drag-item" data-widget-id="widget5545" data-cate="Link">
               <strong class="title"><b>Link Widget</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-5.html">
-                <p><a href="/_nc/html/space/widget/widget-5.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-5.html">
+                <p><a href="/_nc/html/space/iframe/widget-5.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -140,8 +141,8 @@
             <div class="drag-item width-3x" data-widget-id="widget35545" data-cate="Administrator">
               <strong class="title"><b>Administrator Widget 너비x1.5</b> sub title</strong>
               <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-              <iframe src="/_nc/html/space/widget/widget-3.html">
-                <p><a href="/_nc/html/space/widget/widget-3.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+              <iframe src="/_nc/html/space/iframe/widget-3.html">
+                <p><a href="/_nc/html/space/iframe/widget-3.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
               </iframe>
               <div class="btn-wrap">
                 <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
@@ -149,8 +150,8 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn-icon expand"><span class="hide">메뉴명 보기</span></button>
-        <!-- widget-wrap 영역에 .wide 클래스가 추가되는 경우 텍스트 변경: '메뉴명 숨기기'-->
+        <button type="button" class="btn-icon expand"><span class="hide">위젯 목록 보기</span></button>
+        <!-- widget-wrap 영역에 .wide 클래스가 추가되는 경우 텍스트를 변경합니다.: '위젯 목록 숨기기'-->
       </div>
       <!-- // 위젯 메뉴 -->
     </nav>
@@ -158,23 +159,9 @@
 
     <!-- 콘텐츠 -->
     <section class="content">
-      <div class="space-title">
-        <h1 class="hide">NC SPACE</h1>
-        <p><strong>홍길동</strong> 님 안녕하세요!! <b>[IT인프라실 IT시스템팀]</b> <i><img src="/_nc/img/common/img-profile.svg"
-              alt=""></i></p>
-      </div>
-      <div class="drag-group"> <!-- .drag-group: 드래그할 아이템 그룹 -->
-        <div class="drag-item"> <!-- .drag-item: 드래그할 아이템 -->
-          <strong class="title"><b>My resource</b> 최근 결재 신청 이력</strong>
-          <div class="cont"><img src="https://dummyimage.com/155x75/ccc/fff&text=no-image" alt=""></div>
-          <iframe src="/_nc/html/space/widget/widget-0.html">
-            <a href="/_nc/html/space/widget/widget-0.html"> iframes을 지원하지 않는 브라우저용 링크 </a>
-          </iframe>
-          <div class="btn-wrap">
-            <button type="button" class="btn-icon delete"><span class="hide">삭제하기</span></button>
-          </div>
-        </div>
-      </div>
+      <iframe src="/_nc/html/space/iframe/dashboard.html">
+        <p><a href="/_nc/html/space/iframe/dashboard.html"> iframes을 지원하지 않는 브라우저용 링크</a></p>
+      </iframe>
     </section>
     <!-- // 콘텐츠 -->
   </div>
