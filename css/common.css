@@ -633,6 +633,23 @@ iframe {
   padding: 2rem 6rem 0 12.5rem;
 }
 
+.title-wrap {
+  display: flex;
+  align-items: start;
+}
+
+.title-wrap h1 {
+  margin-bottom: 2.2rem;
+  color: #003569;
+  font-size: 1.6rem;
+  font-family: "NotoSansKR-Regular";
+}
+
+.title-wrap h1>b {
+  font-size: 4rem;
+  font-family: "NotoSansKR-Bold";
+}
+
 @media (max-width: 780px) {
   .hide-mw {
     position: absolute;
